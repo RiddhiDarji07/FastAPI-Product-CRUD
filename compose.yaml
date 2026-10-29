@@ -1,0 +1,17 @@
+services:
+  app:
+      build: 
+        context: .
+        dockerfile: DockerFile
+      ports:
+      - "8000:8000"
+      image: myproductapp:latest
+      # image: myfastapiapp:latest
+
+
+
+# docker compose up #main line 
+
+    #docker compose build
+    #docker run img_name # docker run myfastapiapp
+    #docker compose up   => e image pr thi container automatically create + run thse
